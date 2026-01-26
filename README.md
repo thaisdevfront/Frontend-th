@@ -30,7 +30,7 @@ Cada projeto conta com uma descrição detalhada, incluindo:
 Demonstrar minhas habilidades em **front-end**, **UI/UX** e **boas práticas de desenvolvimento**, evidenciando minha capacidade de criar interfaces funcionais, agradáveis e focadas no usuário.
 
 ## 🚀 Visualização
-🔗 **Live demo:** _(adicione aqui o link do seu portfólio)_  
+🔗 **Live demo:** _(https://thaisdevfront.github.io/Frontend-th/)_  
 
 ## 💻 Código
 📂 Repositório disponível neste GitHub
