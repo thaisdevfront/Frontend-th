@@ -36,7 +36,7 @@ Demonstrar minhas habilidades em **front-end**, **UI/UX** e **boas práticas de 
 📂 Repositório disponível neste GitHub
 
 ## 📬 Contato
-- 💼 LinkedIn: _(seu link)_  
+- 💼 LinkedIn: _((https://www.linkedin.com/in/thais-mariano-dev/))_  
 - 💻 GitHub: _([thaisdevfront])_  
 - 📧 Email: thais.devfrontend@gmail.com  
 
