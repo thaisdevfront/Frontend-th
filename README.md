@@ -37,7 +37,7 @@ Demonstrar minhas habilidades em **front-end**, **UI/UX** e **boas práticas de 
 
 ## 📬 Contato
 - 💼 LinkedIn: _(seu link)_  
-- 💻 GitHub: _(seu usuário)_  
+- 💻 GitHub: _([thaisdevfront])_  
 - 📧 Email: thais.devfrontend@gmail.com  
 
 ---
