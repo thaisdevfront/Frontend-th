@@ -2,7 +2,7 @@ const projects = [
     {
         id: "SiteInstitucional–Omega",
         title: "Site Institucional – Omega Governança Tributária",
-        image: "assets/imgs/projetos/omega.png",
+        image: "../assets/imgs/projetos/omega.png",
         demo: "https://wheat-chough-976097.hostingersite.com/",
        
 
@@ -31,7 +31,7 @@ const projects = [
     {
         id: "LandingPage–FlixSeguroResidencial",
         title: "Landing Page – Flix Seguro Residencial",
-        image: "assets/imgs/projetos/flix.png",
+        image: "../assets/imgs/projetos/flix.png",
         demo: "https://aqua-elephant-869860.hostingersite.com/",
        
 
@@ -60,7 +60,7 @@ const projects = [
     {
         id: "LandingPage–UBKSistemas",
         title: "Landing Page – UBK Sistemas | Sistema de Gestão Completo",
-        image: "assets/imgs/projetos/ubk.png",
+        image: "../assets/imgs/projetos/ubk.png",
         demo: "https://ubksistemas.com.br/",
         
 
@@ -89,7 +89,7 @@ const projects = [
     {
         id: "ProtótipodeLojaVirtual–VendadeTênisNike",
         title: "Protótipo de Loja Virtual – Venda de Tênis Nike",
-        image: "assets/imgs/projetos/nike.png",
+        image: "../assets/imgs/projetos/nike.png",
         demo: "https://thaisdevfront.github.io/Nike-th/",
         code: "https://github.com/thaisdevfront/Nike-th",
 
@@ -118,7 +118,7 @@ const projects = [
     {
         id: "OlfatiAromatizantes",
         title: "Protótipo de Loja Virtual – Olfati Aromatizantes",
-        image: "assets/imgs/projetos/olfati.png",
+        image: "../assets/imgs/projetos/olfati.png",
         demo: "https://thaisdevfront.github.io/Olfati/",
         code: "https://github.com/thaisdevfront/Olfati",
 
@@ -148,7 +148,7 @@ const projects = [
     {
         id: "CatálogodeImóveis",
         title: "Protótipo de Site – Catálogo de Imóveis | Bruno Colleto",
-        image: "assets/imgs/projetos/bc.png",
+        image: "../assets/imgs/projetos/bc.png",
         demo: "https://www.figma.com/design/Dq3ZV6l1JUNQnoPHPGFwTz/Bruno-colleto?node-id=0-1&t=GyiU0DHVFRxY1P0r-1",
         
 
@@ -156,7 +156,7 @@ const projects = [
         tech: "Figma · UI/UX Design · Prototipação de Interfaces · Design Responsivo",
 
 
-        dev: "Desenvolvi o protótipo de um site catálogo de imóveis para venda, voltado ao corretor Bruno Colleto, com foco na apresentação clara dos imóveis e na experiência do usuário.Atuei na criação do layout, organização das seções, definição de hierarquia visual e prototipação do fluxo de navegação, considerando boas práticas do mercado imobiliário.",
+        dev: "DDesenvolvi o protótipo de um site catálogo de imóveis para venda, voltado ao corretor Bruno Colleto, com foco na apresentação clara dos imóveis e na experiência do usuário.Atuei na criação do layout, organização das seções, definição de hierarquia visual e prototipação do fluxo de navegação, considerando boas práticas do mercado imobiliário.",
 
 
         challenges: "Organizar múltiplos imóveis de forma clara e intuitiva, facilitando a navegação, visualização das informações e o contato com o corretor.",
@@ -226,5 +226,4 @@ projects.forEach((project, index) => {
   gallery.appendChild(card);
 });
 closeBtn.onclick = () => modal.style.display = "none";
-
 window.onclick = e => e.target === modal && (modal.style.display = "none");
