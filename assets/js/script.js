@@ -226,5 +226,4 @@ projects.forEach((project, index) => {
   gallery.appendChild(card);
 });
 closeBtn.onclick = () => modal.style.display = "none";
-
 window.onclick = e => e.target === modal && (modal.style.display = "none");
