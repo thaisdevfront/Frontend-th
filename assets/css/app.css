@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
 }
+html {
+scroll-behavior: smooth;
+}
 body {
     background: #ffff;
   color: #222;
 }
+
 /* começo */
 .full {
     background: #fafafa;
@@ -21,6 +25,13 @@ h4 {
 a.btn {
     background-color: gold;
     border-radius: 100px;
+}
+button.btn {
+    background-color: gold;
+    border-radius: 100px;
+}
+button.btn.btn-w {
+    background-color: transparent;
 }
 .ideal .card-t{
     border: #666;

@@ -1,0 +1,14 @@
+.stagger-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.stagger-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger-left {
+transform: translateX(-40px);
+}
