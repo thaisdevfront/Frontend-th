@@ -5,5 +5,5 @@ behavior: "smooth"
 }
 
 document.getElementById("download-cv").onclick=()=>{
-      location.href="Curriculo_Thais_Mariano_Frontend_Developer_Junior_Projetos.pdf"
+      location.href="ThaisMariano_CV.pdf"
     }
