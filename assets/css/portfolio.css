@@ -1,0 +1,217 @@
+:root {
+      --bg: #fafafa;
+      --card: #111827;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    background: linear-gradient(180deg, #ffffff, #dddddd);
+    color: #222;
+}
+
+#experiencia  section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 4rem 1.5rem;
+}
+#experiencia h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+#experiencia .timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--border);
+    display: grid;
+    gap: 2rem;
+}
+#experiencia .timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#experiencia .timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .6s ease;
+}
+#experiencia .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -2.4rem;
+    top: .3rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color:#222;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    main {
+      padding: 2rem 1rem 4rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .filters button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid #9ca3af;
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .filters button.active, .filters button:hover {
+    background: gold;
+    color: #020617;
+    border-color: gold;
+}
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+    background: linear-gradient(180deg, #ffffff, #dbdbdb) padding-box, linear-gradient(135deg, #9ca3af, #9ca3af) border-box;
+    border: 1px solid #9ca3af;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 60px rgba(56, 189, 248, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      flex: 1;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+   .tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    background: rgb(243 243 243);
+    color: #252711;
+    border: 1px solid;
+}
+
+    .card-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .card-actions a {
+      flex: 1;
+      text-align: center;
+      padding: 0.6rem 0;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+    background: gold;
+    color: #020617;
+}
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    .btn-outline {
+    border: 1px solid #9ca3af;
+    color: #9ca3af;
+}
+
+    .btn-outline:hover {
+      background: gold;
+    color: #020617;
+    border: 1px solid gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 2.5rem 1rem;
+      }
+      .card img {
+        height: 160px;
+      }
+    }

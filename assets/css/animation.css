@@ -1,15 +1,16 @@
 .stagger-item {
   opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  pointer-events: none; /* bloqueia clique antes de aparecer */
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  pointer-events: none;
 }
 
 .stagger-item.show {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto; /* libera clique */
+  pointer-events: auto; /* 🔑 libera o clique */
 }
+
 
 .stagger-left {
 transform: translateX(-40px);
