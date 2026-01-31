@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Developer Júnior</title>
-
+    <title>Portfólio | Thais Mariano</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/botãoWhatsapp.css">
     <link rel="stylesheet" href="assets/css/animation.css">
@@ -22,7 +21,19 @@
       gtag('config', 'G-GYYKKQ7CEB');
     </script>
 </head>
+
 <body>
+  <nav style="position:sticky;top:0;z-index:50;background: #fafafacf;backdrop-filter:blur(10px);border-bottom: 1px solid #fbfbfb;">
+    <div style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;">
+      <strong>Thais Mariano</strong>
+        <div style="display:flex;gap:1rem;">
+          <a href="index.html" style="color:#9ca3af;text-decoration:none;">Início</a>
+          <a href="portfolio.html" style="color: #ffd700;text-decoration:none;font-weight:600;">Portfólio</a>
+          <a href="https://wa.me/5512981021517?text=Ol%C3%A1+quero+falar+com+a+Thais" style="color:#9ca3af;text-decoration:none;">Contato</a>
+          
+        </div>
+    </div>
+  </nav>
    
   <section class="stagger">
     <div class="full">
@@ -40,9 +51,7 @@
                         <button class="btn btn-w" onclick="abrirWhatsApp()">
                         💬 Falar no WhatsApp
                         </button>
-                        <button class="btn " onclick="portf()">
-                          Ver Portfólio
-                        </button>
+                        <button class="btn" onclick="scrollPortfolio()">Ver Portfólio</button>
                       </div>
                       
                     </div>
@@ -217,9 +226,17 @@
 
   <div class="gallery" id="gallery"></div>
   
-  <p class="text-center pt-4 pb-2">
+  <div  class="stagger-item text-center p-3"> 
+     <p class="text-center pt-4 pb-2">
       💬 “Minha experiência é fruto de um ciclo contínuo de experimentação e aprendizado prático, onde cada desafio superado impulsiona minha constante evolução.”
-  </p>
+    </p>
+  
+    <button id="v_Port" class="btn">
+      Ver Mais
+    </button>
+  </div>
+ 
+
 </section>
 
 <!-- MODAL -->
@@ -251,9 +268,10 @@
         </p>
 
         <div class="links">
-        <a id="demoLink" onclick="event.stopPropagation()" target="_blank" >🔗 Live demo</a>
-        <a id="codeLink" onclick="event.stopPropagation()" target="_blank">💻 Código</a>
-        </div>
+        <a id="demoLink" href="#" target="_blank" rel="noopener">🔗 Ver demo</a>
+        <a id="codeLink" href="#" target="_blank" rel="noopener">💻 Ver código</a>
+
+</div>
     </div>
 </div>
 
@@ -280,9 +298,7 @@
                     <button class="btn btn-w" onclick="abrirWhatsApp()">
                     💬 Falar no WhatsApp
                     </button>
-                    <button class="btn " onclick="portf()">
-                      Ver Portfólio
-                    </button>
+                    <button class="btn" onclick="scrollPortfolio()">Ver Portfólio</button>
                   </div>
             </div>
         </div>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Júnior</title>
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/botãoWhatsapp.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+  <link  rel="stylesheet"  href="assets/css/portfolio.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+</head>
+<body>
+  <nav style="position:sticky;top:0;z-index:50;background: #fafafacf;backdrop-filter:blur(10px);border-bottom: 1px solid #fbfbfb;">
+    <div style="max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem;">
+      <strong>Thais Mariano</strong>
+        <div style="display:flex;gap:1rem;">
+          <a href="index.html" style="color:#9ca3af;text-decoration:none;">Início</a>
+          <a href="portfolio.html" style="color: #ffd700;text-decoration:none;font-weight:600;">Portfólio</a>
+          <a href="https://wa.me/5512981021517?text=Ol%C3%A1+quero+falar+com+a+Thais" style="color:#9ca3af;text-decoration:none;">Contato</a>
+        </div>
+    </div>
+  </nav>
+   
+  <section class="stagger">
+    <div class="full">
+            <div class="container pt-5 pb-5">
+              <div class="row text-center align-items-center">
+                <div class="col-md-12">
+                    <h4>Thais Mariano</h4>
+                    <h1 class="">Meu Portfólio</h1>
+                    <p class="">
+                      Projetos de UI/UX Design, Front-End e Web Design focados em performance, conversão e experiência do usuário.
+                    </p>
+                    <div class="row align-items-center pt-4 pb-4">
+                      <div class="col-md-12 col-xs-12">
+                        <button class="btn btn-w" onclick="abrirWhatsApp()">
+                          Ver Projetos
+                        </button>
+                        <button class="btn " onclick="portf()">
+                          Baixar CV
+                        </button>
+                      </div>
+                      
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
+<main>
+  <div class="container pt-5 pb-5">
+    <div class="filters">
+      <button class="active" data-filter="all">Todos</button>
+      <button data-filter="frontend">Front-End</button>
+      <button data-filter="uiux">UI/UX</button>
+      <button data-filter="wordpress">WordPress</button>
+    </div>
+
+    <section class="grid">
+      <article class="card" data-category="wordpress">
+        <img src="assets/imgs/projetos/omega.png" alt="Projeto">
+        <div class="card-content">
+          <h3>Site Institucional – Omega Governança Tributária</h3>
+          <p>Site institucional funcional, responsivo e profissional, desenvolvido para fortalecer a presença digital da empresa e comunicar seus serviços de forma clara e confiável.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">WordPress</span>
+
+          </div>
+          <div class="card-actions">
+            <a href="https://wheat-chough-976097.hostingersite.com/" class="btn-primary" target="_blank">Ver Projeto</a>
+            <!-- <a href="#" class="btn-outline">GitHub</a> -->
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="frontend uiux">
+        <img src="assets/imgs/projetos/flix.png" alt="Projeto">
+        <div class="card-content">
+          <h3>Landing Page – Flix Seguro Residencial</h3>
+          <p>Landing page otimizada para conversão, com foco em UX, responsividade e performance.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">WordPress</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://aqua-elephant-869860.hostingersite.com/" class="btn-primary" target="_blank">Ver Projeto</a>
+            <!-- <a href="#" class="btn-outline">GitHub</a> -->
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-category="uiux">
+        <img src="assets/imgs/projetos/nike.png" alt="Projeto">
+        <div class="card-content">
+          <h3>Protótipo de Loja Virtual – Venda de Tênis Nike</h3>
+          <p>Design completo no Figma com foco em usabilidade, layout moderno e funil de vendas.</p>
+          <div class="tags">
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+
+          </div>
+          <div class="card-actions">
+            <a href="https://thaisdevfront.github.io/Nike-th/" class="btn-primary" target="_blank">Ver Projeto</a>
+            <a href="https://github.com/thaisdevfront/Nike-th" class="btn-outline" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+    
+  </main>
+<section id="experiencia">
+  <div class="container pt-5 pb-5">
+  <h2>Experiência Profissional</h2>
+  <div class="timeline">
+    <div class="timeline-item reveal show">
+      <h3>UI/UX Designer &amp; Front-End Developer</h3>
+      <span>Freelancer · 2023 – Atual</span>
+      <p>Criação de sites institucionais, landing pages e protótipos focados em conversão, usabilidade e design responsivo.</p>
+    </div>
+    <div class="timeline-item reveal show">
+      <h3>Projetos WordPress &amp; Landing Pages</h3>
+      <span>Omega · Flix · UBK Sistemas</span>
+      <p>Desenvolvimento e personalização de páginas profissionais com foco em SEO básico, clareza da informação e UX.</p>
+    </div>
+    <div class="timeline-item reveal show">
+      <h3>UI/UX Design &amp; Prototipação</h3>
+      <span>Figma · Projetos Autorais</span>
+      <p>Criação de protótipos de e-commerce e catálogos digitais aplicando boas práticas de UX/UI.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+<!-- 
+  <section id="portf" class="portfolio stagger">
+  <h1>Projetos em Destaque</h1>
+  <p class="subtitle">UI • Front-end • Experiência do Usuário</p>
+
+  <div class="gallery" id="gallery"></div>
+  
+  <p class="text-center pt-4 pb-2">
+      💬 “Minha experiência é fruto de um ciclo contínuo de experimentação e aprendizado prático, onde cada desafio superado impulsiona minha constante evolução.”
+  </p>
+</section> -->
+
+<!-- MODAL -->
+<!-- <div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+        
+        <h2 id="projectTitle"></h2>
+
+        <p><strong>📌 Projeto:</strong> <span id="projectName"></span></p>
+
+        <p><strong>Tecnologias utilizadas:</strong><br>
+        <span id="projectTech"></span>
+        </p>
+
+        <p><strong>O que eu desenvolvi:</strong><br>
+        <span id="projectDev"></span>
+        </p>
+
+        <p><strong>Desafios do projeto:</strong><br>
+        <span id="projectChallenges"></span>
+        </p>
+
+        <p><strong>Soluções aplicadas:</strong></p>
+        <ul id="projectSolutions"></ul>
+
+        <p><strong>Resultado:</strong><br>
+        <span id="projectResult"></span>
+        </p>
+
+        <div class="links">
+        <a id="demoLink" onclick="event.stopPropagation()" target="_blank" >🔗 Live demo</a>
+        <a id="codeLink" onclick="event.stopPropagation()" target="_blank">💻 Código</a>
+        </div>
+    </div>
+</div> -->
+
+<section class="stagger">
+  <div class="cv">
+    <div class="container pt-5 pb-5">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <h2 class="stagger-item">Currículo Profissional</h2>
+              <p class="stagger-item">
+                Sou <strong>Frontend Developer Júnior</strong> com foco em <strong>UI/UX</strong>, 
+                especializada no desenvolvimento de interfaces modernas, responsivas e orientadas à conversão.
+              </p>
+              <p class="stagger-item">
+                Tenho experiência prática em projetos reais, atuando desde o design no Figma até a 
+                implementação com <strong>HTML, CSS e JavaScript</strong>.
+              </p>
+
+              <button id="download-cv" class="btn">
+                📄 Baixar Currículo
+              </button>
+                
+            </div>
+            <div class="col-md-6">
+                <h3 class="stagger-item stagger-left">Resumo Rápido</h3>
+                <ul class="stagger-item stagger-left">
+                  <li>💻 Frontend Developer Júnior</li>
+                  <li>🎨 UI/UX Design</li>
+                  <li>📱 Design Responsivo</li>
+                  <li>⚙️ HTML, CSS, JavaScript</li>
+                  <li>🧩 Figma & Prototipagem</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container pt-5">
+    <div class="row text-center">
+      <div class="redesSocial pb-4">
+        <a href="https://www.linkedin.com/in/thais-mariano-dev/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" style="font-size: 35px;color: gold;"></i></a>
+        
+        <a href="https://github.com/thaisdevfront" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"  style="font-size: 35px;color: gold;"></i></a>
+          
+        <a href="https://www.facebook.com/thais.dev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"style="font-size: 35px;color: gold;"></i></a>
+          
+        <!-- <a href="https://www.instagram.com/thais.devfrontend/" target="_blank" rel="noopener noreferrer"><svg  style="width: 25px;color: gold;"  class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><i class="fa-brands fa-instagram"></i> Font Awesome fontawesome.com</a> -->
+      </div>
+      <p>Portfólio focado em experiências digitais, usabilidade e conversão</p>
+      <hr>
+      <p>© 2026 Thais Mariano — UI/UX Designer & Front-End Developer</p>
+      
+    </div>
+  </div>
+</footer>
+<a href="#" class="whatsapp-float" onclick="abrirWhatsApp()">
+<!-- Ícone WhatsApp SVG -->
+<svg class="whatsapp-icon" viewBox="0 0 32 32" fill="white">
+<path d="M16 0C7.164 0 0 7.164 0 16c0 2.82.736 5.58 2.132 8.02L0 32l8.228-2.086A15.93 15.93 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.09c-2.55 0-5.04-.668-7.24-1.94l-.52-.3-4.88 1.24 1.3-4.76-.34-.54A13.05 13.05 0 012.91 16C2.91 8.77 8.77 2.91 16 2.91S29.09 8.77 29.09 16 23.23 29.09 16 29.09z"/>
+<path d="M23.41 18.91c-.4-.2-2.36-1.16-2.73-1.29-.37-.13-.64-.2-.9.2-.26.4-1.03 1.29-1.26 1.55-.23.26-.46.3-.86.1-.4-.2-1.69-.62-3.22-1.98-1.19-1.06-2-2.37-2.23-2.77-.23-.4-.02-.62.18-.82.18-.18.4-.46.6-.7.2-.23.26-.4.4-.66.13-.26.07-.5-.03-.7-.1-.2-.9-2.18-1.23-2.98-.33-.8-.66-.7-.9-.7h-.77c-.26 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.31s1.43 3.84 1.63 4.11c.2.26 2.8 4.28 6.78 6 .95.41 1.7.66 2.28.84.96.3 1.83.26 2.52.16.77-.11 2.36-.97 2.69-1.9.33-.93.33-1.73.23-1.9-.1-.16-.36-.26-.76-.46z"/>
+</svg>
+
+
+<span class="whatsapp-text">Fale comigo</span>
+</a>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/all.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  
+  
+</body>
+</html>
