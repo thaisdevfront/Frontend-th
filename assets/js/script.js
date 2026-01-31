@@ -217,13 +217,32 @@ projects.forEach((project, index) => {
       projectSolutions.appendChild(li);
     });
 
+    // DEMO
     demoLink.href = project.demo;
-    codeLink.href = project.code;
+    demoLink.style.display = "inline-block";
+
+    // CODE (só mostra se existir)
+    if (project.code) {
+      codeLink.href = project.code;
+      codeLink.style.display = "inline-block";
+    } else {
+      codeLink.style.display = "none";
+    }
 
     modal.style.display = "flex";
   });
 
   gallery.appendChild(card);
 });
-closeBtn.onclick = () => modal.style.display = "none";
-window.onclick = e => e.target === modal && (modal.style.display = "none");
+
+// fechar modal
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// 🔥 FECHAR SÓ CLICANDO NO FUNDO (SEM BLOQUEAR LINKS)
+modal.addEventListener("click", e => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
