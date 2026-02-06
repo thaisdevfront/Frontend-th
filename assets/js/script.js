@@ -173,9 +173,14 @@ const projects = [
 
 
         result: "Protótipo funcional e responsivo, desenvolvido para simular um catálogo de imóveis com navegação intuitiva, visual profissional e foco em conversão de contato."
-    }
+    },
+    
 
 ];
+
+
+
+
 
 
 const gallery = document.getElementById("gallery");
