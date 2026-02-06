@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   
+
+
+
 </head>
 <body>
   <nav style="position:sticky;top:0;z-index:50;background: #fafafacf;backdrop-filter:blur(10px);border-bottom: 1px solid #fbfbfb;">
@@ -38,11 +41,11 @@
                     </p>
                     <div class="row align-items-center pt-4 pb-4">
                       <div class="col-md-12 col-xs-12">
-                        <button class="btn btn-w" onclick="abrirWhatsApp()">
-                          Ver Projetos
+                        <button class="btn btn-w" onclick="scrollexperiencia()">
+                          Ver experiencias
                         </button>
-                        <button class="btn " onclick="portf()">
-                          Baixar CV
+                        <button id="download-cv" class="btn">
+                          📄 Baixar Currículo
                         </button>
                       </div>
                       
@@ -52,183 +55,340 @@
             </div>
         </div>
   </section>
-<main>
-  <div class="container pt-5 pb-5">
-    <div class="filters">
-      <button class="active" data-filter="all">Todos</button>
-      <button data-filter="frontend">Front-End</button>
-      <button data-filter="uiux">UI/UX</button>
-      <button data-filter="wordpress">WordPress</button>
-    </div>
-
-    <section class="grid">
-      <article class="card" data-category="wordpress">
-        <img src="assets/imgs/projetos/omega.png" alt="Projeto">
-        <div class="card-content">
-          <h3>Site Institucional – Omega Governança Tributária</h3>
-          <p>Site institucional funcional, responsivo e profissional, desenvolvido para fortalecer a presença digital da empresa e comunicar seus serviços de forma clara e confiável.</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">WordPress</span>
-
-          </div>
-          <div class="card-actions">
-            <a href="https://wheat-chough-976097.hostingersite.com/" class="btn-primary" target="_blank">Ver Projeto</a>
-            <!-- <a href="#" class="btn-outline">GitHub</a> -->
-          </div>
-        </div>
-      </article>
-
-      <article class="card" data-category="frontend uiux">
-        <img src="assets/imgs/projetos/flix.png" alt="Projeto">
-        <div class="card-content">
-          <h3>Landing Page – Flix Seguro Residencial</h3>
-          <p>Landing page otimizada para conversão, com foco em UX, responsividade e performance.</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">WordPress</span>
-          </div>
-          <div class="card-actions">
-            <a href="https://aqua-elephant-869860.hostingersite.com/" class="btn-primary" target="_blank">Ver Projeto</a>
-            <!-- <a href="#" class="btn-outline">GitHub</a> -->
-          </div>
-        </div>
-      </article>
-
-      <article class="card" data-category="uiux">
-        <img src="assets/imgs/projetos/nike.png" alt="Projeto">
-        <div class="card-content">
-          <h3>Protótipo de Loja Virtual – Venda de Tênis Nike</h3>
-          <p>Design completo no Figma com foco em usabilidade, layout moderno e funil de vendas.</p>
-          <div class="tags">
-            <span class="tag">Figma</span>
-            <span class="tag">UI/UX</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-
-          </div>
-          <div class="card-actions">
-            <a href="https://thaisdevfront.github.io/Nike-th/" class="btn-primary" target="_blank">Ver Projeto</a>
-            <a href="https://github.com/thaisdevfront/Nike-th" class="btn-outline" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </article>
-    </section>
-  </div>
-    
-  </main>
-<section id="experiencia">
-  <div class="container pt-5 pb-5">
-  <h2>Experiência Profissional</h2>
-  <div class="timeline">
-    <div class="timeline-item reveal show">
-      <h3>UI/UX Designer &amp; Front-End Developer</h3>
-      <span>Freelancer · 2023 – Atual</span>
-      <p>Criação de sites institucionais, landing pages e protótipos focados em conversão, usabilidade e design responsivo.</p>
-    </div>
-    <div class="timeline-item reveal show">
-      <h3>Projetos WordPress &amp; Landing Pages</h3>
-      <span>Omega · Flix · UBK Sistemas</span>
-      <p>Desenvolvimento e personalização de páginas profissionais com foco em SEO básico, clareza da informação e UX.</p>
-    </div>
-    <div class="timeline-item reveal show">
-      <h3>UI/UX Design &amp; Prototipação</h3>
-      <span>Figma · Projetos Autorais</span>
-      <p>Criação de protótipos de e-commerce e catálogos digitais aplicando boas práticas de UX/UI.</p>
-    </div>
-  </div>
-  </div>
-</section>
-
-
-
-
-<!-- 
-  <section id="portf" class="portfolio stagger">
-  <h1>Projetos em Destaque</h1>
-  <p class="subtitle">UI • Front-end • Experiência do Usuário</p>
-
-  <div class="gallery" id="gallery"></div>
-  
-  <p class="text-center pt-4 pb-2">
-      💬 “Minha experiência é fruto de um ciclo contínuo de experimentação e aprendizado prático, onde cada desafio superado impulsiona minha constante evolução.”
-  </p>
-</section> -->
-
-<!-- MODAL -->
-<!-- <div class="modal" id="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-        
-        <h2 id="projectTitle"></h2>
-
-        <p><strong>📌 Projeto:</strong> <span id="projectName"></span></p>
-
-        <p><strong>Tecnologias utilizadas:</strong><br>
-        <span id="projectTech"></span>
-        </p>
-
-        <p><strong>O que eu desenvolvi:</strong><br>
-        <span id="projectDev"></span>
-        </p>
-
-        <p><strong>Desafios do projeto:</strong><br>
-        <span id="projectChallenges"></span>
-        </p>
-
-        <p><strong>Soluções aplicadas:</strong></p>
-        <ul id="projectSolutions"></ul>
-
-        <p><strong>Resultado:</strong><br>
-        <span id="projectResult"></span>
-        </p>
-
-        <div class="links">
-        <a id="demoLink" onclick="event.stopPropagation()" target="_blank" >🔗 Live demo</a>
-        <a id="codeLink" onclick="event.stopPropagation()" target="_blank">💻 Código</a>
-        </div>
-    </div>
-</div> -->
-
-<section class="stagger">
-  <div class="cv">
+  <section id="experiencia" class="timeline">
     <div class="container pt-5 pb-5">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-              <h2 class="stagger-item">Currículo Profissional</h2>
-              <p class="stagger-item">
-                Sou <strong>Frontend Developer Júnior</strong> com foco em <strong>UI/UX</strong>, 
-                especializada no desenvolvimento de interfaces modernas, responsivas e orientadas à conversão.
-              </p>
-              <p class="stagger-item">
-                Tenho experiência prática em projetos reais, atuando desde o design no Figma até a 
-                implementação com <strong>HTML, CSS e JavaScript</strong>.
-              </p>
+      <h2 class="text-center">Linha do Tempo</h2>
 
-              <button id="download-cv" class="btn">
-                📄 Baixar Currículo
-              </button>
-                
+        <div class="timeline-container">
+
+          <div class="timeline-item">
+            <span class="timeline-date">Jan/2026 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web | Site Institucional</h3>
+              <h5>Omega Governança Tributária</h5>
+              <p>
+                Atuei no desenvolvimento do site institucional da Omega Governança Tributária, participando da criação da estrutura, implementação do front-end e organização estratégica do conteúdo. O projeto foi pensado para transmitir credibilidade, profissionalismo e clareza nos serviços oferecidos, alinhando design e funcionalidade às necessidades do segmento tributário.
+              </p>
+              <p>
+                Contribuí na construção de um layout responsivo e moderno, com navegação intuitiva e identidade visual consistente, garantindo uma boa experiência do usuário em diferentes dispositivos. O site teve como objetivo fortalecer a presença digital da empresa, apresentar seus serviços de forma clara e facilitar o contato com potenciais clientes por meio de uma estrutura bem definida e orientada à comunicação institucional.
+              </p>
+              
+              <div class="links timeline-links">
+                <a href="https://wheat-chough-976097.hostingersite.com/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+              </div>
             </div>
-            <div class="col-md-6">
-                <h3 class="stagger-item stagger-left">Resumo Rápido</h3>
-                <ul class="stagger-item stagger-left">
-                  <li>💻 Frontend Developer Júnior</li>
-                  <li>🎨 UI/UX Design</li>
-                  <li>📱 Design Responsivo</li>
-                  <li>⚙️ HTML, CSS, JavaScript</li>
-                  <li>🧩 Figma & Prototipagem</li>
-                </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">Fex/2024 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web | Landing Page </h3>
+              <h5>Flix Seguro Residencial</h5>
+              <p>
+                Atuei no desenvolvimento da landing page da Flix Seguro Residencial, 
+                participando da criação da estrutura, implementação do front-end e organização 
+                estratégica do conteúdo. O projeto foi desenvolvido com foco em conversão, 
+                priorizando clareza na comunicação dos serviços, navegação intuitiva e 
+                experiência do usuário.
+              </p>
+              <p>
+                Contribuí na construção de um layout responsivo e funcional, alinhado à identidade 
+                visual da marca, além da implementação de chamadas para ação bem posicionadas para 
+                facilitar o contato com potenciais clientes. O objetivo foi fortalecer a presença 
+                digital da empresa e otimizar a geração de leads por meio de uma página clara, 
+                objetiva e orientada a resultados.
+              </p>
+              
+                <div class="links timeline-links">
+                  <a href="https://aqua-elephant-869860.hostingersite.com/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
             </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Mai/2024 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web | Catálogo de Imóveis </h3>
+              <h5>Bruno Colleto</h5>
+              <p>
+                Atuei como desenvolvedora web e web designer no projeto 
+                Catálogo de Imóveis – Bruno Colleto, sendo responsável pela criação e 
+                desenvolvimento da plataforma digital voltada à apresentação e divulgação 
+                de imóveis para venda. Participei desde a concepção visual até a 
+                implementação do front-end, garantindo uma interface moderna, funcional e 
+                alinhada às necessidades do mercado imobiliário.
+              </p>
+              <p>
+                Contribuí na estruturação das páginas, organização das informações dos 
+                imóveis e desenvolvimento de um design responsivo, proporcionando uma 
+                navegação intuitiva e uma experiência fluida em diferentes dispositivos. 
+                O projeto teve como foco facilitar a visualização dos imóveis, valorizar 
+                os anúncios e otimizar a comunicação entre o corretor e os potenciais clientes.
+              </p>
+             
+                <div class="links timeline-links">
+                  <a href="https://www.figma.com/design/Dq3ZV6l1JUNQnoPHPGFwTz/Bruno-colleto?node-id=0-1&t=GyiU0DHVFRxY1P0r-1" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Fev/2023 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web | Landing Page</h3>
+              <h5>PRIANTI ASSOCIADOS</h5>
+              <p>
+                Fui responsável pelo desenvolvimento da landing page da Prianti e Associados, 
+                atuando desde o planejamento da estrutura até a implementação final. 
+                Trabalhei na organização estratégica do conteúdo, desenvolvimento do 
+                front-end e construção de uma interface clara e profissional, com foco 
+                em usabilidade, design responsivo e experiência do usuário.
+              </p>
+              <p>
+                O projeto foi desenvolvido com abordagem orientada à conversão, 
+                destacando os serviços da empresa, fortalecendo a credibilidade da 
+                marca e facilitando o contato com potenciais clientes por meio de 
+                chamadas para ação bem posicionadas e navegação intuitiva.
+              </p>
+              
+                <div class="links timeline-links">
+                  <a href="https://priantieassociados.com.br/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Dez/2023 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web / Design</h3>
+              <h5>Criative VaptVupt App</h5>
+              <p>Atuei na criação e no desenvolvimento da landing page da Harmony Websites, 
+                participando de todas as etapas do projeto, desde a definição da estrutura até 
+                a implementação visual e funcional. Contribuí no desenvolvimento do front-end, 
+                organização estratégica das seções e apresentação dos projetos exibidos na página, 
+                com foco em usabilidade, design responsivo e experiência do usuário.
+              </p>
+                 <p>
+                  O trabalho teve como objetivo comunicar de forma clara os serviços 
+                  oferecidos, valorizar os projetos desenvolvidos e fortalecer a presença 
+                  digital da marca, garantindo uma navegação fluida, identidade visual 
+                  consistente e uma página orientada à conversão.
+                </p>
+              
+                <div class="links timeline-links">
+                  <a href="https://harmonydigital.github.io/harmonywebsites/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Dez/2023 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web / Design</h3>
+              <h5>Criative VaptVupt App</h5>
+              <p>Atuei ativamente na criação e no desenvolvimento da landing page do Criative 
+                Vapt Vupt, participando desde a concepção da estrutura até a implementação final.
+                 Contribuí na organização estratégica das seções, desenvolvimento do front-end e 
+                 na apresentação dos projetos exibidos na página, com foco em usabilidade, 
+                 design responsivo e clareza na comunicação.</p>
+                 <p>O trabalho teve como objetivo valorizar os serviços e projetos da marca, 
+                  proporcionando uma navegação intuitiva e uma experiência visual consistente, 
+                  alinhada à identidade do estúdio e orientada à conversão.</p>
+              
+                <div class="links timeline-links">
+                  <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Mai/2023 | Presencial</span>
+            <div class="timeline-content">
+              <h3>Gerente de Mídias Sociais / Design</h3>
+              <h5>Esquina das Modas, Calçadão, Art&Sabor e Grupo Smidi</h5>
+              <p>
+                Atuei como Gerente de Mídias Sociais na gestão completa de múltiplos perfis no Instagram, sendo responsável pelo planejamento, criação e execução de estratégias de conteúdo voltadas para fortalecimento de marca, engajamento e aumento da presença digital. Trabalhei diretamente com diferentes segmentos, adaptando a comunicação e o posicionamento de cada marca ao seu público-alvo.
+              </p>
+                 <p>
+                  Desenvolvi conteúdos visuais estratégicos, incluindo artes gráficas, vídeos promocionais e produção fotográfica de lojas e produtos, garantindo uma identidade visual consistente e alinhada aos objetivos comerciais. Também fui responsável pelo planejamento de calendários editoriais, criação de descrições persuasivas e apoio à execução de campanhas patrocinadas via Facebook Meta Ads, contribuindo para o alcance de novos públicos e melhoria dos resultados de engajamento e visibilidade.
+                 </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Mai/2023 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Gerente de Mídias Sociais / Design</h3>
+              <h5>Dolores Ateliê</h5>
+              <p>
+                Atuei no gerenciamento completo do perfil do Dolores Ateliê no Instagram, sendo responsável pelo planejamento, criação e execução de estratégias de conteúdo voltadas ao fortalecimento da marca e crescimento orgânico do perfil. Desenvolvi peças gráficas e organizei visualmente o feed, garantindo uma identidade visual consistente, atrativa e alinhada ao posicionamento do ateliê.
+              </p>
+                 <p>
+                  Realizei o planejamento estratégico das publicações, incluindo definição de temas, frequência e uso estratégico de hashtags, com foco em ampliar o alcance, engajamento e reconhecimento da marca. O trabalho contribuiu para consolidar a presença digital do ateliê, fortalecer sua identidade visual e criar uma comunicação mais profissional e próxima do público.
+                 </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Set/2022 |  Remoto</span>
+            <div class="timeline-content">
+              <h3>Web Designer</h3>
+              <h5>Ideia Soluções Tecnológicas</h5>
+              <p>
+                Atuei como Web Designer na Ideia Soluções Tecnológicas, sendo responsável pela criação de interfaces no Figma, desenvolvimento de wireframes, protótipos e apoio em testes A/B. Contribuí no design da home do portal Classimóveis, focando em usabilidade, hierarquia visual e experiência do usuário.
+              </p>
+              <p>
+                Também participei de reuniões diárias de alinhamento com a equipe, colaborando no refinamento das soluções e garantindo que o design estivesse alinhado às necessidades do produto e aos objetivos do negócio.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Fev/2022 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Web Designer / Desenvolvedora Front-end</h3>
+              <h5>IntellectX Tecnologia</h5>
+              <p>
+                Atuei como Web Designer e Desenvolvedora Front-end na IntellectX Tecnologia, sendo responsável pela criação de sites institucionais e lojas virtuais, desde a definição da estrutura visual até a implementação técnica. Trabalhei no desenvolvimento front-end utilizando HTML, CSS e JavaScript, garantindo interfaces modernas, funcionais e alinhadas às necessidades de cada projeto.
+              </p>
+              <p>
+                Realizei customizações e estruturação de layouts em WordPress, adaptando temas e componentes para atender às demandas específicas dos clientes. Apliquei boas práticas de UX/UI, design responsivo e usabilidade, assegurando uma experiência consistente e intuitiva em diferentes dispositivos. O foco do trabalho foi entregar soluções digitais profissionais, visualmente atrativas e com boa performance.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-date">Jan/2022 | Presencial</span>
+            <div class="timeline-content">
+              <h3>Diretora de Arte</h3>
+              <h5>Gráfica Nagoya</h5>
+              <p>
+                Atuei como Diretora de Arte na Gráfica Nagoya, sendo responsável pela criação, desenvolvimento e finalização de peças gráficas para diferentes materiais impressos. Realizei a direção criativa dos projetos, acompanhando todo o processo de produção gráfica, desde a concepção visual até a entrega final.
+              </p>
+              <p>
+                Também fui responsável pela conferência técnica e fechamento correto de arquivos, garantindo qualidade, padronização e conformidade com os padrões de impressão, contribuindo para resultados visuais consistentes e profissionais.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Out/2021 | Presencial</span>
+            <div class="timeline-content">
+              <h3>Designer Gráfica</h3>
+              <h5>Impacto</h5>
+              <p>
+                Atuei como Designer Gráfica na Impacto, sendo responsável pela criação e finalização de peças gráficas para diferentes materiais. Realizei a preparação e organização de arquivos para produção, garantindo padronização técnica e qualidade visual em todas as entregas.
+              </p>
+              <p>
+                Trabalhei com foco na fidelidade ao briefing e atenção aos detalhes, assegurando consistência estética e excelência nos materiais desenvolvidos, contribuindo para resultados visuais profissionais e alinhados aos objetivos dos projetos.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-date">Ago/2020 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Web Designer</h3>
+              <h5>Protótipo de Loja Virtual Olfati</h5>
+              <p>
+                Atuei na criação do protótipo da loja virtual Olfati, desenvolvendo a interface no Figma e implementando o front-end com HTML, CSS e JavaScript. Trabalhei na estruturação de um layout responsivo, com foco em UX, navegação intuitiva e apresentação clara dos produtos.
+              </p>
+              <p>
+                O projeto teve como objetivo simular uma experiência de e-commerce funcional e visualmente atrativa, alinhando design e desenvolvimento para valorizar a jornada do usuário.
+              </p>
+              
+                <div class="links timeline-links">
+                  <a href="https://thaisdevfront.github.io/Olfati/" target="_blank" rel="noopener">🔗 Ver demo</a>
+                  <a href="https://github.com/thaisdevfront/Olfati" target="_blank" rel="noopener">💻 Ver código</a>
+
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Jun/2020 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Web | Landing Page</h3>
+              <h5>Colonial Village II</h5>
+              <p>
+                Atuei no desenvolvimento da landing page do Colonial Village II, realizando a criação do layout e prototipação no Figma, seguida da implementação em WordPress. Executei customizações com HTML, CSS e JavaScript, garantindo um design responsivo, funcional e alinhado à identidade do projeto.
+              </p>
+              <p>
+                A estrutura da página foi pensada com foco em conversão e geração de leads, priorizando usabilidade, clareza das informações e chamadas para ação estrategicamente posicionadas.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://thaisdevfront.github.io/Olfati/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="https://github.com/thaisdevfront/Olfati" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Abr/2020 | Presencial</span>
+            <div class="timeline-content">
+              <h3>Designer Gráfica</h3>
+              <h5>Gráfica Rápida Ubatuba</h5>
+              <p>
+                Atuei como Designer Gráfica na Gráfica Rápida Ubatuba, realizando atendimento ao cliente e administração de orçamentos, além de ajustes e conferência técnica de artes gráficas. Fui responsável pela organização dos pedidos, controle de prazos e apoio à logística de entregas.
+              </p>
+              <p>
+                O trabalho exigiu atenção aos detalhes, agilidade e comunicação eficiente, garantindo qualidade nas entregas e satisfação dos clientes.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Dez/2019 | Remoto</span>
+            <div class="timeline-content">
+              <h3>Desenvolvedora Front-end</h3>
+              <h5>Quicky Digital</h5>
+              <p>
+                Atuei como Desenvolvedora Front-end na Quicky Digital, participando do desenvolvimento de campanhas e páginas digitais. Fui responsável pela implementação de layouts, tratamento e otimização de imagens, sempre respeitando as diretrizes de branding e identidade visual de cada projeto.
+              </p>
+              <p>
+                Trabalhei em colaboração com agências e equipes multidisciplinares, contribuindo para entregas ágeis, visuais consistentes e alinhadas aos objetivos estratégicos das campanhas digitais.
+              </p>
+              
+                <div class="links timeline-links">
+                  <!-- <a href="https://criativevaptvupt.github.io/app/" target="_blank" rel="noopener">🔗 Ver demo</a> -->
+                  <!-- <a href="#" target="_blank" rel="noopener">💻 Ver código</a> -->
+                </div>
+            </div>
+          </div>
+          
         </div>
-    </div>
-  </div>
-</section>
+        </div>
+  </section>
 
 
 <footer class="footer">
@@ -262,11 +422,12 @@
 </a>
 
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/app.js"></script>
+  
   <script src="assets/js/whatsapp.js"></script>
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/all.js"></script>
   <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/app.js"></script>
   
   
 </body>

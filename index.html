@@ -178,7 +178,7 @@
                       <strong>Design Tools:</strong>
                       </h5>
                       <p>
-                      Figma, Photoshop, After Effects, Canva e Coreldraw.
+                      Figma, Photoshop e Canva.
                       </p>
                       </div>
                   </div>
@@ -223,17 +223,20 @@
   <section id="portf" class="portfolio stagger">
   <h1>Projetos em Destaque</h1>
   <p class="subtitle">UI • Front-end • Experiência do Usuário</p>
+  <p class="text-center pt-3 pb-2 d-sm-none">
+      💬 Click na imagem e veja mais
+      </p>
 
   <div class="gallery" id="gallery"></div>
   
   <div  class="stagger-item text-center p-3"> 
      <p class="text-center pt-4 pb-2">
       💬 “Minha experiência é fruto de um ciclo contínuo de experimentação e aprendizado prático, onde cada desafio superado impulsiona minha constante evolução.”
-    </p>
+      </p>
   
-    <button id="v_Port" class="btn">
+    <!-- <button id="v_Port" class="btn">
       Ver Mais
-    </button>
+    </button> -->
   </div>
  
 
@@ -268,10 +271,9 @@
         </p>
 
         <div class="links">
-        <a id="demoLink" href="#" target="_blank" rel="noopener">🔗 Ver demo</a>
-        <a id="codeLink" href="#" target="_blank" rel="noopener">💻 Ver código</a>
-
-</div>
+          <a id="demoLink" href="#" target="_blank" rel="noopener">🔗 Ver demo</a>
+          <a id="codeLink" href="#" target="_blank" rel="noopener">💻 Ver código</a>
+        </div>
     </div>
 </div>
 
@@ -280,7 +282,7 @@
     <div class="container pt-5 pb-5">
         <div class="row d-flex align-items-center">
             <div class="col-md-6">
-              <img class="img-fluid stagger-item stagger-left" src="assets/imgs/perfil.jpg" style="border-radius: 15px;" alt="" srcset="">
+              <img class="img-fluid stagger-item stagger-left" src="assets/imgs/perfil.png" style="border-radius: 15px;" alt="" srcset="">
             </div>
             <div class="col-md-6">
                 <h1 class="stagger-item stagger-left">Conheça mais <span>sobre mim</span></h1>
@@ -291,42 +293,8 @@
                     Tenho background em UI/UX, o que me permite transformar layouts em código limpo, organizado e focado na experiência do usuário.
                     Busco uma oportunidade como Desenvolvedora Front-End Júnior para evoluir tecnicamente e contribuir com soluções eficientes.
                 </p>
-              </br>
-                  <h5 class="stagger-item stagger-left">🔍 Buscando oportunidade como </br> Front-End Developer Júnior</h5>
-                </br>
-                <div class="col-md-12 col-xs-12">
-                    <button class="btn btn-w" onclick="abrirWhatsApp()">
-                    💬 Falar no WhatsApp
-                    </button>
-                    <button class="btn" onclick="scrollPortfolio()">Ver Portfólio</button>
-                  </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</section>
-<section class="stagger">
-  <div class="cv">
-    <div class="container pt-5 pb-5">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-              <h2 class="stagger-item">Currículo Profissional</h2>
-              <p class="stagger-item">
-                Sou <strong>Frontend Developer Júnior</strong> com foco em <strong>UI/UX</strong>, 
-                especializada no desenvolvimento de interfaces modernas, responsivas e orientadas à conversão.
-              </p>
-              <p class="stagger-item">
-                Tenho experiência prática em projetos reais, atuando desde o design no Figma até a 
-                implementação com <strong>HTML, CSS e JavaScript</strong>.
-              </p>
-
-              <button id="download-cv" class="btn">
-                📄 Baixar Currículo
-              </button>
-                
-            </div>
-            <div class="col-md-6">
-                <h3 class="stagger-item stagger-left">Resumo Rápido</h3>
+              <!-- </br> -->
+              <h3 class="stagger-item stagger-left">Resumo Rápido</h3>
                 <ul class="stagger-item stagger-left">
                   <li>💻 Frontend Developer Júnior</li>
                   <li>🎨 UI/UX Design</li>
@@ -334,11 +302,21 @@
                   <li>⚙️ HTML, CSS, JavaScript</li>
                   <li>🧩 Figma & Prototipagem</li>
                 </ul>
+                </br>
+                <div class="col-md-12 col-xs-12">
+                    <button class="btn btn-w" onclick="abrirWhatsApp()">
+                    💬 Falar no WhatsApp
+                    </button>
+                    <button id="download-cv" class="btn">
+                      📄 Baixar Currículo
+                    </button>
+                  </div>
             </div>
         </div>
     </div>
   </div>
 </section>
+
 
 
 <footer class="footer">
@@ -372,6 +350,8 @@
 </a>
 
   <script src="assets/js/script.js"></script>
+  <!-- <script src="assets/js/script copy.js"></script> -->
+
   <script src="assets/js/app.js"></script>
   <script src="assets/js/whatsapp.js"></script>
   <script src="assets/js/animation.js"></script>
