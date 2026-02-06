@@ -1,65 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
-html {
-scroll-behavior: smooth;
-}
+
 body {
-    background: #ffff;
+  background: #fafafa;
   color: #222;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 99999 !important;
-}
-nav, nav * {
-  pointer-events: auto !important;
-}
-/* começo */
-.full {
-    background: #fafafa;
-    height: 90vh;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-h4 {
-    border-bottom: gold solid;
-    display: inline-flex;
-}
-a.btn {
-    background-color: gold;
-    border-radius: 100px;
-}
-button.btn {
-    background-color: gold;
-    border-radius: 100px;
-}
-button.btn.btn-w {
-    background-color: transparent;
-}
-.ideal .card-t{
-    border: #666;
-}
-
-footer.footer {
-    background-color: #141411;
-    color: white;
-}
-
-
-/* Portfólio */
-
 .portfolio {
-    padding: 48px !important;
-    padding: 0 20px;
-    background: #fafafa;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.portfolio h1 {
+h1 {
   text-align: center;
   font-size: 32px;
 }
@@ -77,7 +34,7 @@ footer.footer {
 }
 
 /* CARD */
-.portfolio .card {
+.card {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -87,11 +44,12 @@ footer.footer {
   animation: fadeIn 0.6s forwards;
 }
 
-.portfolio .card img {
+.card img {
   width: 100%;
   display: block;
 }
-.portfolio .card::after {
+
+.card::after {
   content: "Ver projeto";
   position: absolute;
   inset: 0;
@@ -104,15 +62,18 @@ footer.footer {
   transition: 0.3s;
   font-size: 18px;
 }
+
 .card:hover::after {
   opacity: 1;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
+
 /* MODAL */
 .modal {
   position: fixed;
@@ -123,6 +84,7 @@ footer.footer {
   align-items: center;
   padding: 20px;
 }
+
 .modal-content {
   background: #fff;
   width: 100%;
@@ -133,6 +95,7 @@ footer.footer {
   max-height: 90vh;
   overflow-y: auto;
 }
+
 .close {
   position: absolute;
   right: 20px;
@@ -140,21 +103,26 @@ footer.footer {
   font-size: 26px;
   cursor: pointer;
 }
+
 .modal h2 {
   margin-bottom: 20px;
 }
+
 .modal p, ul {
   margin-bottom: 14px;
   line-height: 1.6;
 }
+
 ul {
   padding-left: 20px;
 }
+
 .links {
   display: flex;
   gap: 15px;
   margin-top: 25px;
 }
+
 .links a {
   background: #000;
   color: #fff;
@@ -162,16 +130,4 @@ ul {
   border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
-} 
-
-@media (max-width: 500px) {
-    h1 {
-        padding: 30px 0px 1px;
-    }
-    .sobre h1.stagger-item.stagger-left.show {
-    padding: 30px 0px 0px;
-    }
-    .cv h3.stagger-item.stagger-left.show {
-    padding: 30px 0px 0px;
-    }
 }
