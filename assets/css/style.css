@@ -92,8 +92,9 @@ button.close {
   margin-bottom: 20px;
 }
 .modal p, ul {
-  margin-bottom: 14px;
-  line-height: 1.6;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: black;
 }
 ul {
   padding-left: 20px;
