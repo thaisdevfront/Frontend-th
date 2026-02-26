@@ -753,7 +753,9 @@ section#sobre .sobre-img img {
     font-size: 3rem;
 }
 
-
+.sobre-title h1 {
+        font-size: 3rem;
+    }
 
     
 }
