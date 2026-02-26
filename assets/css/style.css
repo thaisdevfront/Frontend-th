@@ -1,5 +1,6 @@
 * {
-  
+    /* Bloquear seleção de texto */
+  user-select: none;
  
   font-family: Arial, sans-serif;
 }
