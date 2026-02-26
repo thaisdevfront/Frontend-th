@@ -336,3 +336,23 @@ btnMais.addEventListener("click", () => {
     ? "Ver menos"
     : "Ver mais";
 });
+
+
+// Bloquear tecla Print Screen
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'PrintScreen') {
+    e.preventDefault();
+    alert('Captura de tela bloqueada');
+  }
+});
+
+// Bloquear Ctrl + P
+document.addEventListener('keydown', function (e) {
+  if (e.ctrlKey && e.key === 'p') {
+    e.preventDefault();
+    alert('Impressão desativada');
+  }
+});
+
+// Desativar botão direito (copiar / salvar)
+document.addEventListener('contextmenu', e => e.preventDefault());
