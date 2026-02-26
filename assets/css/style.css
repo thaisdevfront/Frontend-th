@@ -511,22 +511,27 @@ section#sobre{
     section#hero {
     overflow: hidden;
 }
-section#sobre {
-    height: auto;
+        section#sobre {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .sobre-title h1 {
+    font-size: x-large;
 }
 /* section#conhecimento {
     height: auto;
 } */
 
 #mais img.scroll-item.show {
-    width: 100%;
-    padding: 0px 0px 30px;
-}
+        width: 100%;
+        padding: 0px 0px 0px;
+    }
 #port h1.scroll-item.delay.show {
-    font-size: 7rem;
+    font-size: 5rem;
 }
 #port h2.scroll-item.delay.show {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 #port .row.align-items-center {
     padding: 30px 20px 30px;
@@ -667,6 +672,9 @@ section#sobre .sobre-img img {
         width: 100%;
         left: 0px;
     }
+.col.sobre-img {
+    display: flex;
+}
 
 #mais img.scroll-item.delay.show {
     width: stretch;
