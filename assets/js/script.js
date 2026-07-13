@@ -238,8 +238,8 @@ const projects = [
         id: "CatálogodeImóveis",
         title: "Protótipo de Site – Catálogo de Imóveis | Bruno Colleto",
         image: "assets/img/projetos/bc.png",
-        demo: "https://www.figma.com/design/Dq3ZV6l1JUNQnoPHPGFwTz/Bruno-colleto?node-id=0-1&t=GyiU0DHVFRxY1P0r-1",
-        
+        demo: "https://thaisdevfront.github.io/appimoveis/",
+        code: "https://github.com/thaisdevfront/appimoveis/",
 
 
         tech: "Figma · UI/UX Design · Prototipação de Interfaces · Design Responsivo",
