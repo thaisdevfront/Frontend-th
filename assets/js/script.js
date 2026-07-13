@@ -150,7 +150,9 @@ const projects = [
         id: "LandingPage–UBKSistemas",
         title: "Landing Page – UBK Sistemas | Sistema de Gestão Completo",
         image: "assets/img/projetos/ubk.png",
+        
         demo: "https://ubksistemas.com.br/",
+        design: "https://www.figma.com/proto/WnPMYrx2DxZHfOwzJ6K4Ru/uberbank?node-id=4004-2&p=f&t=ZLTX7JaNNAjpAb7D-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
         
 
 
@@ -180,6 +182,7 @@ const projects = [
         title: "Protótipo de Loja Virtual – Venda de Tênis Nike",
         image: "assets/img/projetos/nike.png",
         demo: "https://thaisdevfront.github.io/Nike-th/",
+        design: "https://www.figma.com/proto/UvZWf31YfINfju4QXXIJDC/Material-Design-da-web?node-id=402-6&t=f4Y9smbN3pJofxWU-1&scaling=scale-down-width&content-scaling=fixed&page-id=402%3A2",
         code: "https://github.com/thaisdevfront/Nike-th",
 
 
@@ -209,6 +212,7 @@ const projects = [
         title: "Protótipo de Loja Virtual – Olfati Aromatizantes",
         image: "assets/img/projetos/olfati.png",
         demo: "https://thaisdevfront.github.io/Olfati/",
+        design: "https://www.figma.com/proto/UvZWf31YfINfju4QXXIJDC/Material-Design-da-web?node-id=701-3&t=EsqYhnwPlrUzVkFO-1&scaling=scale-down-width&content-scaling=fixed&page-id=701%3A2",
         code: "https://github.com/thaisdevfront/Olfati",
 
 
@@ -239,6 +243,7 @@ const projects = [
         title: "Protótipo de Site – Catálogo de Imóveis | Bruno Colleto",
         image: "assets/img/projetos/bc.png",
         demo: "https://thaisdevfront.github.io/appimoveis/",
+        design: "https://www.figma.com/proto/Dq3ZV6l1JUNQnoPHPGFwTz/Bruno-colleto?node-id=68-3&t=ThZoRC7vCnCXWi9h-1&scaling=scale-down-width&content-scaling=fixed&page-id=68%3A2",
         code: "https://github.com/thaisdevfront/appimoveis/",
 
 
