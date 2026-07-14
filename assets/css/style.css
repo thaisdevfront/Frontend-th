@@ -563,9 +563,9 @@ p.scroll-item.delay.show {
         display: flex;
         align-items: center;
     }
-    .sobre-title h1 {
-    font-size: x-large;
-}
+        .sobre-title h1 {
+        font-size: 32px;
+    }
 /* section#conhecimento {
     height: auto;
 } */
@@ -677,6 +677,8 @@ span.elem-retet img {
         left: 0px;
         top: 0px;
     }
+
+/* img - hero */
 .col.hero-img img {
         width: 85%;
         justify-content: center;
@@ -684,18 +686,19 @@ span.elem-retet img {
         position: absolute;
         z-index: 15;
         bottom: 0px;
-        left: 50px;
+        left: 0px;
     }
+/* TXT - hero */
 .col-md-3.hero-title {
-    /* bottom: -200px; */
-    display: flex;
-    position: relative;
-    align-items: center;
-    left: 40px;
-}
+        /* bottom: -200px; */
+        display: flex;
+        position: relative;
+        align-items: center;
+        left: 10px;
+    }
 
 h3.hero {
-    font-size: 1.2rem;
+    font-size: 32px;
 }
 
 
