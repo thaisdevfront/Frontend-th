@@ -134,7 +134,7 @@ ul {
 }
 
 .maisport.aberto {
-  max-height: 1000px; /* valor alto para caber o conteúdo */
+  max-height: 1600px; /* valor alto para caber o conteúdo */
 }
 
 .btn-mais {
@@ -422,6 +422,19 @@ section#sobre .sobre-img img {
 
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 525px) {
+
+    h1.sobre.scroll-item.delay.show {
+    font-size: 42px;
+}
+h5 {
+    font-size: 24px;
+}
+h3.hero {
+    font-size: 37px;
+}
+p {
+    font-size: 19px;
+}
     #hero{
         height: 100vh;
     }
@@ -507,23 +520,20 @@ section#sobre{
     height: auto;
 }
 
-
 #conhecimento {
-    background-image: url(/assets/img/fundo-mob.png);
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center;
 }
 
 #port h1.scroll-item.delay.show {
-    font-size: 7rem;
+    font-size: 6rem;
 }
 #port h2.scroll-item.delay.show {
-    font-size: 2.5rem;
+        font-size: 2.2rem;
+        text-align: start;
+    }
+p.scroll-item.delay.show {
+    font-size: 19px;
+    text-align: start;
 }
 #port .row.align-items-center {
     padding: 30px 20px 30px;
@@ -533,11 +543,12 @@ section#sobre{
  section#port {
     height:auto ;
 }
-    #port .col-md-3 {
+       #port .col-md-3 {
         flex: none;
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        padding: 10px 10px;
     }
 
 }
