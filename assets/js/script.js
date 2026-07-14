@@ -287,6 +287,7 @@ const projectSolutions = document.getElementById("projectSolutions");
 const projectResult = document.getElementById("projectResult");
 const demoLink = document.getElementById("demoLink");
 const codeLink = document.getElementById("codeLink");
+const desLink = document.getElementById("desLink");
 
 
 const buttons = document.querySelectorAll(".btn-port");
@@ -327,14 +328,28 @@ buttons.forEach(button => {
       projectSolutions.appendChild(li);
     });
 
-    demoLink.href = project.demo;
-    demoLink.style.display = "inline-block";
+    // Demo
+    if (project.demo) {
+      demoLink.href = project.demo;
+      demoLink.style.display = "inline-block";
+    } else {
+      demoLink.style.display = "none";
+    }
 
+    // Código
     if (project.code) {
       codeLink.href = project.code;
       codeLink.style.display = "inline-block";
     } else {
       codeLink.style.display = "none";
+    }
+
+    // Design
+    if (project.design) {
+      desLink.href = project.design;
+      desLink.style.display = "inline-block";
+    } else {
+      desLink.style.display = "none";
     }
 
     modal.style.display = "flex";
